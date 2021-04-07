@@ -27,7 +27,7 @@ function categorias()
             <div class='card-body'><h5 class='card-title'>".$fila['NOMBRE']."</h5>
               <h6 class='card-subtitle mb-2 text-muted'>Ofertas</h6>
               <div class='item'>
-                <img src='".$fila['FOTO']."'/>
+                <img src='".$fila['FOTO']."' />
                 
 
               </div>
@@ -66,32 +66,30 @@ function ArticulosPorCategoria($categoria)
        // $mdb->exec('SET ChARACTER SET utf8');
         echo "<div class='container-fluid'>
               
-       <div class='container py-3 rm-auto'>
+       <div class='container py-3 mx-auto'>
         <div class='row'>        ";
-        $sql='SELECT * FROM tienda.vfarticulos WHERE CATEGORIA='.$categoria.' LIMIT 10';
+        $sql='SELECT * FROM tienda.vfarticulos WHERE CATEGORIA='.$categoria.' LIMIT 4';
         
         
         foreach($pdo->query($sql) as $fila)
         {
           echo "
-            
-          <div class='card bg-light shadow px-2 rounded col-lg-6 '>
-          <div class='card-body'><h4 class='especial'>".$fila['NOMBRE']." - ".$fila['PRECIO']." €
+          
+          <div class='card bg-light shadow px-2 rounded col-lg-10 '>
+          <div class='card-body'><h4>".$fila['NOMBRE']." - ".$fila['PRECIO']." €
           </h4>
             
             <div class='row'>
-            <div class='item col-lg-6'>
-              <img class='item' src='".$fila['FOTO']."'/>
-              
-
+            <div class='item col-lg-offset-1 col-lg-5'>
+              <img class='zoom' src='".$fila['FOTO']."'/>
             </div>
             
-            <div class='item col-lg-6'><b>".
+            <div class='item col-lg-5'><b>".
               $fila['SNOMBRE']."</b>
               <br/>
               <b>MARCA</b>
               ".$fila['MARCA']."
-              <br/>
+              </br>
               <b>DESCRIPCIÓN</b>
               <p>".$fila['DESCRIPCION']."</p>
             
