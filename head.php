@@ -18,6 +18,8 @@ $(document).ready(function(){
     }, function() {
         $(this).removeClass('transition');
     });
+    $('#anuncio').hide();
+//$('#anuncio').fadeIn(0);
 });
 </script>
 <style>

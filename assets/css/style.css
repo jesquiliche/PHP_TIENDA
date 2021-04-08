@@ -1,8 +1,7 @@
 #silverfox {
 /* Asignamos una altura mínima */
   
-  background-image: url('assets/img/img1.jpg');
-  background-size: cover;
+   background-size: cover;
   background-position: center;
 }
 .img.item {
@@ -81,11 +80,11 @@ img.zoom {
   #silverfox {
 /* Asignamos una altura mínima */
     
-    background-image: url('../img/img1.jpg');
+    background-image: url('../img/tienda.jpg');
     background-size: cover;
     background-position: center;
   }
-  .item img {
+    .item img {
     height: 100%;
     width: 80%;
     min-height: 50px;
@@ -98,5 +97,6 @@ img.zoom {
     width: 18rem;
   }
   header{
-    background-color: rgba(245, 238, 238, 0.856);
+    //background-color: rgba(245, 238, 238, 0.856);
+   
   }

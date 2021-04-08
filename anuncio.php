@@ -14,7 +14,9 @@
                         Echamos la casa por la ventana. Descuentos hasta del 50%.</strong></p>
                     </div>
                     <div class="container col-lg-5">
-                        <img src='./assets/img/aniversario.jpg' width="400"/>
+                       
+                       <?php require_once 'carrusel.php' ?>
+                       <!-- <img src='./assets/img/aniversario.jpg' width="400"/> -->
                     </div>                        
     
                 

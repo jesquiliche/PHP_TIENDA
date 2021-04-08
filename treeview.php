@@ -1,5 +1,9 @@
-<?PHP
-echo "
+<?php
+//  require_once './head.php';
+// require_once './cabecera.php';
+// require_once './menu.php';
+?>:
+<script>
 $('#tree').tree({
   dataSource: [ 
     { 
@@ -20,14 +24,13 @@ $('#tree').tree({
     }
   ]
 });
-<link href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css' rel='stylesheet'/>
-<link href='https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css' rel='stylesheet'/>
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet"/>
 
-<div class='container'>
-  <div id='tree'></div>
+<div class="container">
+  <div id="tree"></div>
 </div>
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-<script src='https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js'></script>";
-
-?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js"></script>

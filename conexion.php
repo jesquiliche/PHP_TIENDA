@@ -23,7 +23,7 @@ function categorias()
         foreach($pdo->query('SELECT * FROM tienda.CATEGORIAS') as $fila) {
             echo "
             
-            <div class='card bg-light shadow px-2 rounded col-lg-3 '>
+            <div class='card bg-light shadow px-2 rounded  col-lg-3 '>
             <div class='card-body'><h5 class='card-title'>".$fila['NOMBRE']."</h5>
               <h6 class='card-subtitle mb-2 text-muted'>Ofertas</h6>
               <div class='item'>
@@ -75,7 +75,7 @@ function ArticulosPorCategoria($categoria)
         {
           echo "
           
-          <div class='card bg-light shadow px-2 rounded col-lg-10 '>
+          <div class='card bg-light shadow px-2 rounded col-lg-11 '>
           <div class='card-body'><h4>".$fila['NOMBRE']." - ".$fila['PRECIO']." €
           </h4>
             
@@ -86,7 +86,7 @@ function ArticulosPorCategoria($categoria)
             
             <div class='item col-lg-5'><b>".
               $fila['SNOMBRE']."</b>
-              <br/>
+              <br>
               <b>MARCA</b>
               ".$fila['MARCA']."
               </br>
@@ -99,7 +99,7 @@ function ArticulosPorCategoria($categoria)
             
             </div>
             <a href='#'class='btn btn-danger'>Comprar</a>
-         
+           
              </div>
         
         </div>
