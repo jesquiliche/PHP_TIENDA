@@ -39,12 +39,16 @@
 
 
                                     echo "<li class='nav-item dropdown'>";
-                                        echo "<div class='dropdown-item dropright'>";
-
-                                        echo "<a href='#' class='sm dropdown-toggle' data-toggle='dropdown'>".$fila['CATEGORIA']."</a>";
+                                        echo "<div id='submenu' class='dropdown-item dropright'>";
+                                       
+                                        echo "<a href='#' aria-labelledby='submenu' class='sm dropdown-toggle' data-toggle='dropdown'>".$fila['CATEGORIA']."</a>";
 
                                         echo "<div class='dropdown-menu'>";
+                                        echo '<ul class="nav navbar-nav">';
+                                        echo "<li>";
                                         echo "<a href='#' class='dropdown-item'>".$fila['CATEGORIA']."</a>";
+                                        echo "</li>";
+                                        echo "</ul>";
                                         echo "<a href='#' class='dropdown-item'>".$fila['CATEGORIA']."</a>";
                                         echo "<a href='#' class='dropdown-item'>".$fila['CATEGORIA']."</a>";
                                         echo "<a href='#' class='dropdown-item'>".$fila['CATEGORIA']."</a>";
