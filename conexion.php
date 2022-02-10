@@ -1,7 +1,5 @@
 <?php
 
-
-
 $link='mysql:host=localhost;port=3307;dbname=tienda';
 $usuario="root";
 $pwd="3912481";
